@@ -8,7 +8,7 @@ public class Employee {
     String salary;
     int age;
 
-    Employee(String fio, String position, String email, String phoneNumber, String salary, int age){
+    Employee(String fio, String position, String email, String phoneNumber, String salary, int age) {
         this.fio = fio;
         this.position = position;
         this.email = email;
@@ -17,8 +17,7 @@ public class Employee {
         this.age = age;
     }
 
-
-    public void printEmployeeInfo(){
+    public void printEmployeeInfo() {
         System.out.println("ФИО сотрудника: " + this.fio);
         System.out.println("Должность сотрудника: " + this.position);
         System.out.println("Email сотрудника: " + this.email);
@@ -43,6 +42,5 @@ public class Employee {
         for (Employee employee : employees) {
             employee.printEmployeeInfo();
         }
-
     }
 }
